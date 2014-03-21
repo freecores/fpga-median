@@ -1,20 +1,37 @@
-// +----------------------------------------------------------------------------
-// Universidade Federal da Bahia
-//------------------------------------------------------------------------------
-// PROJECT: FPGA Median Filter
-//------------------------------------------------------------------------------
-// FILE NAME            : pixel_network.v
-// AUTHOR               : João Carlos Bittencourt
-// AUTHOR'S E-MAIL      : joaocarlos@ieee.org
-// -----------------------------------------------------------------------------
-// RELEASE HISTORY
-// VERSION  DATE        AUTHOR        DESCRIPTION
-// 1.0      2013-08-13  joao.nunes    initial version
-// -----------------------------------------------------------------------------
-// KEYWORDS: comparator, low, high, median
-// -----------------------------------------------------------------------------
-// PURPOSE: Obtain the Median of a 3x3 mask.
-// -----------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------
+ This file is part of FPGA Median Filter.
+
+    FPGA Median Filter is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    FPGA Median Filter is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with FPGA Median Filter.  If not, see <http://www.gnu.org/licenses/>.
+-------------------------------------------------------------------------------- */
+
+/* +----------------------------------------------------------------------------
+   Universidade Federal da Bahia
+  ------------------------------------------------------------------------------
+   PROJECT: FPGA Median Filter
+  ------------------------------------------------------------------------------
+   FILE NAME            : pixel_network.v
+   AUTHOR               : João Carlos Bittencourt
+   AUTHOR'S E-MAIL      : joaocarlos@ieee.org
+   -----------------------------------------------------------------------------
+   RELEASE HISTORY
+   VERSION  DATE        AUTHOR        DESCRIPTION
+   1.0      2013-08-13  joao.nunes    initial version
+   -----------------------------------------------------------------------------
+   KEYWORDS: comparator, low, high, median
+   -----------------------------------------------------------------------------
+   PURPOSE: Obtain the Median of a 3x3 mask.
+   ----------------------------------------------------------------------------- */
 module common_network
 #(
     parameter DATA_WIDTH = 8
